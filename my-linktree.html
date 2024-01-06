@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minhas redes sociais! </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #gradient-overlay {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+            /* IE6-9 */
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: 50%;
+            transform: scale(1.005);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .button {
+            width: 340px;
+            height: 50px;
+            background-color: #c0c0c0;
+            color: #1d1b1b;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            background-color: #828282;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gradient-overlay"></div>
+    <div class="image-container">
+        <img src="img/profile-picture.png" alt="Imagem Centralizada">
+    </div>
+    <div class="button-container">
+        <a href="https://www.youtube.com/channel/UCh6sgz1ij_my64lX8rQnPXg" class="button">YouTube</a>
+        <a href="https://open.spotify.com/user/223w3q4xdm4pquahzl5xhfpia?si=t08g7SlVRvqhF0LseXTyXg&nd=1&dlsi=3a3053d5b4564f" class="button">Spotify</a>
+        <a href="https://github.com/me15degrees" class="button">GitHub</a>
+        <a href="https://www.linkedin.com/in/maria-eduarda-nascimento-andrade-bb0b86213/" class="button">LinkedIn</a>
+        <a href="https://letterboxd.com/me15degrees/" class="button">Letterboxd</a>
+        <a href="https://www.last.fm/pt/user/me15degrees" class="button">Last.fm</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var $win = $(window),
+            w = 0,
+            h = 0,
+            rgb = [],
+            getWidth = function () {
+                w = $win.width();
+                h = $win.height();
+            };
+
+        $win.resize(getWidth).mousemove(function (e) {
+            rgb = [
+                Math.round(e.pageX / w * 255),
+                Math.round(e.pageY / h * 255),
+                150
+            ];
+
+            $('#gradient-overlay').css('background', 'rgb(' + rgb.join(',') + ')');
+        }).resize();
+    </script>
+</body>
+</html>
