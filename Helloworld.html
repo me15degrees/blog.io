@@ -38,6 +38,36 @@
             margin-bottom: 15px; 
         }
 
+        .like-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .like-button {
+            padding: 10px 20px;
+            background-color: #a6e3a1;
+            color: #181825;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .like-button:hover {
+            background-color: #8bc48f;
+        }
+
+        .like-count {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #cdd6f4;
+        }
+
         @media (max-width: 768px) {
             .text-container {
                 padding: 15px;
@@ -58,8 +88,25 @@
         <p>Agora para completar o meu público, tenho que verificar se você é uma pessoa que já se perdeu. Se sim, sinto muito, mas resta apenas uma pergunta:</p>
         <p>- Tá tudo bem?</p>
 
+        <div class="like-container">
+            <button class="like-button" id="likeButton">Curtir</button>
+            <div class="like-count" id="likeCount">Curtidas: 0</div>
+        </div>
     </div>
+
+    <script>
+        const likeButton = document.getElementById('likeButton');
+        const likeCount = document.getElementById('likeCount');
+
+        let likes = parseInt(localStorage.getItem('likes')) || 0;
+        likeCount.textContent = `Curtidas: ${likes}`;
+
+        likeButton.addEventListener('click', () => {
+            likes++;
+            localStorage.setItem('likes', likes); 
+            likeCount.textContent = `Curtidas: ${likes}`;
+        });
+    </script>
     
 </body>
 </html>
-
