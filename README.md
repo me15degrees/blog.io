@@ -1,4 +1,4 @@
-## Link para redes sociais
+## Blog Pessoal
 
 <div align="center">
   
@@ -7,10 +7,10 @@
   
 </div>
 
-Este projeto consiste em uma página simples desenvolvida em HTML e CSS para exibir links para várias redes sociais. A página possui um design acessível com uma sobreposição de gradiente que reage sutilmente ao movimento do mouse.
+Este projeto consiste em uma página simples desenvolvida em HTML e CSS para exibir páginas estáticas de texto e trabalhos que eu escrevi durante o Ensino Médio e a Graduação.
 
 ## Hospedagem
-Você pode acessar o deploy em: https://me15degrees.github.io/my-social-media.github.io/.
+Você pode acessar o deploy [aqui](https://me15degrees.github.io/blog.io/).
 
 - *saiba mais em <a href="https://pages.github.com/">GitHub Pages</a>.*
 ## Melhorias
