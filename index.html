@@ -141,7 +141,37 @@
             transform: scale(1.1);
         }
 
-        /* Responsividade para telas pequenas */
+        .steminasevent {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #313244; /
+            text-align: justify;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-family: Helvetica;
+            color: #cdd6f4; 
+        }
+
+        .steminasevent h2 {
+            text-align: center;
+            font-size: 1.6em;
+            color: #cdd6f4; 
+            margin-bottom: 10px;
+        }
+
+        .steminasevent p {
+            text-indent: 35px;
+            padding: 10px;
+        }
+
+        .steminasevent .youtube-video {
+            margin: 20px auto; 
+            text-align: center; 
+        }
+
+
         @media (max-width: 768px) {
             .intro, .articles {
                 padding: 15px;
@@ -168,57 +198,54 @@
             }
         }
 
-        /* Estilos para o vídeo */
-        .youtube-video {
-            display: block;
-            margin: 40px auto;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="assets/child_computer.jpg" alt="Imagem" class="profile-picture">
-    <h1>Olá, tudo bem?</h1>
-</header>
-
-<div class="intro">
-    <h2>Quem sou eu?</h2>
-    <p>Meu nome é Maria, tenho 21 anos e sou entusiasta de diversas áreas do conhecimento. Desde criança sempre fui muito curiosa e com certeza isso moldou quem eu sou hoje.
-        Gosto muito de aprender coisas novas: desde um fato histórico engraçado até a dedução de uma fórmula matemática bonitinha.</p>
-    <p>Recentemente entrei na Universidade Federal de Uberlândia (UFU), onde curso Engenharia Elétrica – o sonho de toda criança que estucava garfo nas tomadas de casa. Falando nisso, no meu canal do YouTube tem alguns vídeos sobre essa minha decisão de curso, já que não era minha 1ª opção. Além desse tópico, publico vlogs de viagem, resumos dos meus semestres na faculdade e conteúdos relacionados à área de tecnologia. Você pode encontrá-lo clicando no ícone no final da página.</p>
-    <p>Já no meu blog vocês vão encontrar alguns textos meus sobre esses assuntos que eu me interesso, talvez alguns textos descontraídos e alguns trechos de código.</p>
-
-
-</div>
-
-<section class="articles">
-    <h2>Textos Recentes</h2>
-    <a href="templates/artigo1.html" class="article-title">Mulheres na computação [Artigo]</a>
-    <a href="templates/artigo2.html" class="article-title">Hello, world! [Piada]</a>
-    <a href="templates/artigo3.html" class="article-title">Estudo das relações de analfabetismo e do Covid-19 no Brasil a partir de uma perspectiva sindêmica [Trabalho Final do Ensino Médio] </a>
-</section>
-
-<!-- Centralização do vídeo -->
-<div class="youtube-video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AYsMPiQNixU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<footer>
-    <div class="social-icons">
-        <a href="https://www.youtube.com/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        </a>
-        <a href="https://github.com/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
-        </a>
+    <header>
+        <img src="assets/child_computer.jpg" alt="Imagem" class="profile-picture">
+        <h1>Olá, tudo bem?</h1>
+    </header>
+    
+    <div class="intro">
+        <h2>Quem sou eu?</h2>
+        <p>Meu nome é Maria, tenho 21 anos e sou entusiasta de diversas áreas do conhecimento. Desde criança sempre fui muito curiosa e com certeza isso moldou quem eu sou hoje.
+            Gosto muito de aprender coisas novas: desde um fato histórico engraçado até a dedução de uma fórmula matemática bonitinha.</p>
+        <p>Recentemente entrei na Universidade Federal de Uberlândia (UFU), onde curso Engenharia Elétrica – o sonho de toda criança que estucava garfo nas tomadas de casa. Falando nisso, no meu canal do YouTube tem alguns vídeos sobre essa minha decisão de curso, já que não era minha 1ª opção. Além desse tópico, publico vlogs de viagem, resumos dos meus semestres na faculdade e conteúdos relacionados à área de tecnologia. Você pode encontrá-lo clicando no ícone no final da página.</p>
+        <p>Já no meu blog vocês vão encontrar alguns textos meus sobre esses assuntos que eu me interesso, talvez alguns textos descontraídos e alguns trechos de código.</p>
     </div>
-    @me15degrees
-</footer>
-
-</body>
-</html>
+    
+    <section class="articles">
+        <h2>Textos Recentes</h2>
+        <a href="templates/artigo1.html" class="article-title">Mulheres na computação [Artigo]</a>
+        <a href="templates/artigo2.html" class="article-title">Hello, world! [Piada]</a>
+        <a href="templates/artigo3.html" class="article-title">Estudo das relações de analfabetismo e do Covid-19 no Brasil a partir de uma perspectiva sindêmica [Trabalho Final do Ensino Médio] </a>
+    </section>
+    
+    <div class="steminasevent">
+        <h2>Eventos que eu participei</h2>
+        <p>O evento STEMINAS atua na promoção da inclusão de mulheres e meninas nas áreas de STEM (Ciência, Tecnologia, Engenharia e Matemática). Durante a 2ª edição do evento, foram realizadas palestras, workshops e rodas de conversa que destacaram as contribuições femininas nessas áreas. Um momento inspirador para promover a equidade de gênero e incentivar novas gerações de mulheres a explorar seu potencial em STEM na Universidade Federal de Uberlândia (UFU).</p>
+        <div class="youtube-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/live/nwOBmD9ZIpA?si=iPALojhPpfhUpO9r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+            </a>
+        </div>
+        @me15degrees
+    </footer>
+    
+    </body>
+    </html>
+    
