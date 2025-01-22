@@ -82,7 +82,50 @@
                 font-size: 0.9em;
                 color: #cdd6f4; 
             }
-       
+        .comment-section {
+        margin-top: 100px;
+        }
+
+        .comment-section h3 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #cdd6f4;
+        }
+
+        .comment-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .comment-section label {
+            font-size: 1rem;
+            color: #cdd6f4;
+        }
+
+        .comment-section textarea, .comment-section input[type="submit"] {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .comment-section textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .comment-section input[type="submit"] {
+            background-color: #a6e3a1;
+            color: #181825;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .comment-section input[type="submit"]:hover {
+            background-color: #89c78d;
+        }
 
     </style>
 </head>
@@ -110,15 +153,31 @@
         <p>Mas o que me deixa com a pulga atrás da orelha é o que vai ser o próximo passo? Alguma das redes sociais existentes vai me ocupar o buraco do twitter? O instagram não vai ser até porque o propósito dele sempre foi outro – usar imagens para compartilhar a vida – mas e os textos? Mesmo que surja algo “melhor” por ser disruptivo com os algoritmos usados atualmente e do formato das influências, como fazer as pessoas mudarem para essa nova casa?</p>
         <p>Será que todas as mudanças acontecerão pelas mãos do jurídico brasileiro ou existem movimentos de pessoas que se preocupam com isso? Ultimamente eu ouvi um pouco sobre a ideia de federalização das redes sociais, como se fosse possível ter uma portabilidade (que nem de operadora) para todas as redes. Não sei bem se esse era o nome do conceito, quem sabe mais tarde eu procuro sobre isso e escrevo.</p>
         <p>É um assunto que eu quero amadurecer mais, mas que eu já quis compartilhar por aqui.</p>
-    
+        
+        
+
+        <div class="comment-section">
+            <h3>Seção de comentários</h3>
+            <form action="mailto:me15degrees@gmail.com" method="post" enctype="text/plain">
+                <label for="comment">Seu comentário e/ou sugestão:</label>
+                <textarea id="comment" name="comment" placeholder="Escreva seu comentário aqui..." required></textarea>
+                <input type="submit" value="Enviar Comentário">
+            </form>
+        </div>
+
         <div class="blog-signature">
-            <img src="profile.jpg" alt="Foto da autora" style="max-width: 50%;">
+            <img src="profile.jpg" alt="Foto da autora" style="max-width: 50%; max-height: 50%;">
             <div>
                 <h4>@me15degrees</h4>
                 <h5>Me chamo Maria (você saberia disso se tivesse lido a página inicial). Eu escrevo sobre o que me dá vontade e tento ser engraçadinha na medida do possível. Atualmente meus hobbies são gastar dinheiro em cartas de Pokémon, ver filmes e ler livros de assuntos técnicos. Meu deck é o de Gardevoir.
                 </h5>
             </div>
         </div>
+
+        <!DOCTYPE html>
+
+ 
+
     </div>
 </body>
 </html>
