@@ -57,11 +57,20 @@
             }
 
             .blog-signature img {
-                width: 200px; 
-                height: 200px; 
-                max-width: 30%; 
-                border-radius: 80%; 
-                margin-right: 20px; 
+                width: 100%;
+                max-width: 200px; 
+                height: auto; 
+                object-fit: cover; 
+                border-radius: 50%; 
+                margin-right: 20px;
+            }
+
+            
+            @media (max-width: 768px) {
+                .blog-signature img {
+                    max-width: 120px; 
+                    margin-right: 10px; 
+                }
             }
 
             .blog-signature h4 {
@@ -166,12 +175,12 @@
         </div>
 
         <div class="blog-signature">
-            <img src="profile.jpg" alt="Foto da autora" style="max-width: 30%; max-height: 30%;">
+            <img src="profile.jpg" alt="Foto da autora">
             <div>
                 <h4>@me15degrees</h4>
                 <h5>Me chamo Maria (você saberia disso se tivesse lido a página inicial). Eu escrevo sobre o que me dá vontade e tento ser engraçadinha na medida do possível. Atualmente meus hobbies são gastar dinheiro em cartas de Pokémon, ver filmes e ler livros de assuntos técnicos. Meu deck é o de Gardevoir.
                 </h5>
-            </div>
+        </div>
         </div>
 
         <!DOCTYPE html>
